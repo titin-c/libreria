@@ -7,7 +7,7 @@ import { SideBar } from "../components/ui/SideBar";
 
 export const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/main">
         
         <SideBar />
 

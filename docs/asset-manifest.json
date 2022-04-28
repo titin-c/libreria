@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.460ccbe4.css",
-    "main.js": "/static/js/main.efb81d7f.js",
-    "static/media/bg-nature.jpg": "/static/media/bg-nature.238500fee8e434d70c42.jpg",
-    "static/media/icon-exit.svg": "/static/media/icon-exit.001aebb6f371999d051f.svg",
-    "index.html": "/index.html",
-    "static/media/icon-search.svg": "/static/media/icon-search.baa725a2b4ccf2ab1b04.svg",
-    "static/media/icon-loading.svg": "/static/media/icon-loading.db5256498db5b061d013.svg",
-    "static/media/icon-download.svg": "/static/media/icon-download.751e6bc129ff31a37be7.svg",
-    "static/media/icon-arrow-right.svg": "/static/media/icon-arrow-right.aab9917de713f9af77ec.svg",
-    "main.460ccbe4.css.map": "/static/css/main.460ccbe4.css.map",
-    "main.efb81d7f.js.map": "/static/js/main.efb81d7f.js.map"
+    "main.css": "/libreria/static/css/main.c096ea44.css",
+    "main.js": "/libreria/static/js/main.9300704b.js",
+    "static/media/bg-nature.jpg": "/libreria/static/media/bg-nature.238500fee8e434d70c42.jpg",
+    "static/media/icon-exit.svg": "/libreria/static/media/icon-exit.001aebb6f371999d051f.svg",
+    "index.html": "/libreria/index.html",
+    "static/media/icon-search.svg": "/libreria/static/media/icon-search.baa725a2b4ccf2ab1b04.svg",
+    "static/media/icon-loading.svg": "/libreria/static/media/icon-loading.db5256498db5b061d013.svg",
+    "static/media/icon-download.svg": "/libreria/static/media/icon-download.751e6bc129ff31a37be7.svg",
+    "static/media/icon-arrow-right.svg": "/libreria/static/media/icon-arrow-right.aab9917de713f9af77ec.svg",
+    "main.c096ea44.css.map": "/libreria/static/css/main.c096ea44.css.map",
+    "main.9300704b.js.map": "/libreria/static/js/main.9300704b.js.map"
   },
   "entrypoints": [
-    "static/css/main.460ccbe4.css",
-    "static/js/main.efb81d7f.js"
+    "static/css/main.c096ea44.css",
+    "static/js/main.9300704b.js"
   ]
 }
