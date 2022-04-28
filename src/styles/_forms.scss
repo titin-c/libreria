@@ -1,0 +1,317 @@
+input[type="text"], input[type="password"], input[type="number"], textarea {
+    -webkit-appearance: none;
+  }
+  .form-recipient {
+    display: flex;
+    flex-wrap: wrap;
+}
+ .ttn-form-cont{
+      margin: 0 10px 10px 0;
+      display: inline-block;
+  }
+  .ttn-form-label {
+    width:fit-content;
+    font-size: .8em;
+    margin-bottom: 5px;
+    display: block;
+    padding-left: 5px;
+    color:$ttn-greyMedium;
+    position: relative;
+  }
+  .ttn-form-required .ttn-form-label{
+      
+    padding-left: 15px;
+  }
+  .ttn-form-required .ttn-form-label::before {
+    content: "*";
+    color: $ttn-danger;
+    font-size: 1.7em;
+    position: absolute;
+    top: -2px;
+    left: 0;
+  
+  }
+
+*::placeholder{color: rgba($ttn-greyMedium, .7);}
+  // inputs
+
+  .ttn-input {
+    box-sizing: border-box;
+    margin: 0;
+    font-variant: tabular-nums;
+    list-style: none;
+    font-feature-settings: "tnum";
+    position: relative;
+    display: inline-block;
+    padding: 4px 11px;
+    color: $ttn-greyDark;
+    font-size: 14px;
+    line-height: 1.5715;
+    background-color: $ttn-background-color;
+    background-image: none;
+    border: 1px solid $ttn-greyLight;
+    border-radius: 2px;
+    transition: all .3s;
+    min-width: 198.6px;
+    min-height: 31.6px;
+
+    &:hover {
+        border-color: $ttn-primary;
+      }
+
+    &:focus {
+        border-color: rgba($ttn-primary, .5);
+        box-shadow: 0 0 0 2px rgba($ttn-primary, 0.1);
+        outline: 0;
+      }
+      
+  }
+
+  .ttn-form-disabled .ttn-input {
+    background: rgba($ttn-greyLight, .5);
+    cursor: no-drop;
+
+    &:hover {
+        border-color: $ttn-greyLight;
+      }
+
+    &:focus {
+        border-color: $ttn-greyLight;
+        box-shadow: none;
+        outline: 0;
+      }
+  }
+
+  // selects forms
+  .ttn-select {
+    box-sizing: border-box;
+    margin: 0;
+    font-variant: tabular-nums;
+    list-style: none;
+    font-feature-settings: "tnum";
+    position: relative;
+    display: inline-block;
+    padding: 4px 11px;
+    color: $ttn-greyDark;
+    font-size: 14px;
+    line-height: 1.5715;
+    background-color: $ttn-background-color;
+    background-image: none;
+    border: 1px solid $ttn-greyLight;
+    border-radius: 2px;
+    transition: all .3s;
+    min-width: 198.6px;
+    min-height: 31.6px;
+  }
+  .ttn-form-disabled .ttn-select {
+    background: rgba($ttn-greyLight, .5);
+    cursor: no-drop;
+    color:$ttn-greyMedium;
+  }
+
+//input password
+.ttn-form-input-label-pass-eye {
+    position: relative;
+    left: -22px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    top: 2px;
+  }
+  .ttn-form-input-label-pass-eye img{
+      opacity: .5;
+  }
+
+//textarea
+.ttn-textarea {
+    box-sizing: border-box;
+    margin: 0;
+    font-variant: tabular-nums;
+    list-style: none;
+    font-feature-settings: "tnum";
+    position: relative;
+    display: inline-block;
+    padding: 4px 11px;
+    color: $ttn-greyDark;
+    font-size: 14px;
+    line-height: 1.5715;
+    background-color: $ttn-background-color;
+    background-image: none;
+    border: 1px solid $ttn-greyLight;
+    border-radius: 2px;
+    transition: all .3s;
+    min-width: 198.6px;
+  }
+  .ttn-form-counter .ttn-textarea{
+      padding-top: 25px;
+  }
+  .ttn-form-counter {
+    position:relative;
+}
+.ttn-textform-counter {
+    position: absolute;
+    left: 8px;
+    font-size: .7em;
+    color: #ccc;
+    top: 6px;
+    font-style: italic;
+  }
+
+  //input counter 
+  .ttn-form-counter > input {
+    padding-left: 42px;
+  }
+  .ttn-form-counter > input + .ttn-textform-counter {
+    top: 8px;
+  }
+
+  //form group
+  .ttn-form-group  {
+    display: flex;
+  }
+  .ttn-form-group label {
+    box-sizing: border-box;
+    margin: 0;
+    font-variant: tabular-nums;
+    list-style: none;
+    font-feature-settings: "tnum";
+    position: relative;
+    display: inline-block;
+    padding: 4px 11px;
+    color: $ttn-greyMedium;
+    font-size: 14px;
+    line-height: 1.5715;
+    background-color: rgba($ttn-greyLight, .3);
+    background-image: none;
+    border: 1px solid $ttn-greyLight;
+    border-radius: 2px 
+  }
+  .ttn-form-group > label:first-child {
+    border-right: none;
+    border-radius: 2px 0 0 2px;
+  }
+  .ttn-form-group > label:first-child + input {
+    border-radius: 0 2px 2px 0;
+    border-left: none;
+  }
+  .ttn-form-group >  input:first-child {
+    border-right: none;
+    border-radius: 2px 0 0 2px;
+  }
+  .ttn-form-group > input:first-child + * {
+    border-radius: 0 2px 2px 0;
+    border-left: none;
+  }
+  
+  .ttn-form-group > input:first-child + .ttn-btn-icon::before {
+    
+    left: 15px;
+    top: 7px;
+}
+
+/* Switch */
+.switch-checkbox {
+    display: none;
+  }
+  .switch-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+  
+  .switch-cont:after {
+    border: 2px solid $ttn-greyLight;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    background-color: $ttn-greyLight;
+    display: inline-block;
+    content: "";
+    left: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  
+  
+  .switch-cont {
+    display: inline-block;
+    width: 42px;
+    height: 22px;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 2px solid $ttn-greyLight;
+    margin-right: 10px;
+  }
+
+.active .switch-cont:after {
+    left: calc(100% - 18px);
+  }
+.check1.active .switch-cont:after {
+    background-color: $ttn-success;
+    border-color: $ttn-success;
+}
+.checked{
+    font-size: .9em;
+    color:$ttn-success;
+    font-weight: bold;
+  }
+  .no-checked{
+    color:rgba($ttn-opposite-background-color, .5);
+    font-size: .9em;
+  }
+
+.check1 .no-checked::before {
+    content: "¿Está usted de acuerdo?";
+}
+.check1 .checked::before {
+    content: "Sí, estoy de acuerdo.";
+}
+
+.check2.active .switch-cont:after {
+    background-color: $ttn-danger;
+    border-color: $ttn-danger;
+}
+.check2 .no-checked::before {
+    content: "¿Seguro que está usted de acuerdo?";
+}
+.check2 .checked::before {
+    content: "Sí, lo estoy.";
+}
+.check2.active .switch-cont {
+    border: 2px solid $ttn-danger;
+  }
+.check2 .checked{
+    font-size: .9em;
+    color:$ttn-danger;
+    font-weight: bold;
+  }
+
+  .check3 .no-checked::before {
+    content: "";
+}
+.check3 .checked::before {
+    content: "";
+}
+.check3 .switch-cont:after {
+    
+    content: "X";
+    color:$ttn-background-color;
+    font-size: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+.check3.active .switch-cont:after {
+    background-color: $ttn-success;
+    border-color: $ttn-success;
+    content: "✓";
+    color:$ttn-background-color;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+}

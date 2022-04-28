@@ -1,0 +1,320 @@
+button, a.ttn-btn , html [type=button], [type=reset], [type=submit]  {
+    -webkit-appearance: button;
+}
+
+.ttn-btn {
+    line-height: 1.5715;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    background-image: none;
+    border: 1px solid transparent;
+    box-shadow: 0 2px rgba($ttn-opposite-background-color , 0.016);
+    cursor: pointer;
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    border-radius: 2px;
+    color: rgba($ttn-opposite-background-color , 0.85);
+    border-color: $ttn-greyLight;
+    background: $ttn-background-color;
+    text-decoration: none;
+    overflow: hidden;
+    padding: 7px 15px 9px;
+    font-size: 16px;
+
+    &:hover{
+        color: $ttn-primary;
+        border-color: $ttn-primary;
+        background: $ttn-background-color;
+    }
+    &.ttn-btn-icon:hover::before{
+        background-color: rgba($ttn-primary, .50);
+    }
+}
+
+.ttn-btn-rounded {
+    border-radius: 100px;
+  }
+
+  .ttn-btn-block {
+    display: block;
+    width: 100%;
+  }
+
+  .ttn-btn-disabled, .ttn-btn-disabled:hover {
+    background: rgba($ttn-opposite-background-color, .02) !important;
+    color: rgba($ttn-opposite-background-color, .4) !important;
+    border-color: $ttn-greyLight !important;
+    box-shadow: 0 2px rgba($ttn-opposite-background-color , 0.016) !important;
+    cursor: default;
+  }
+  .ttn-link.ttn-btn-disabled, .ttn-btn-text.ttn-btn-disabled {
+    background: $ttn-background-color !important;
+    color: rgba($ttn-opposite-background-color, .4) !important;
+    border-color: $ttn-background-color !important;
+    box-shadow: none !important;
+    cursor:default;
+  }
+
+ .ttn-btn-trans {
+    background: transparent;
+    color: #fff;
+    border: 1px solid;
+  }
+  
+  .ttn-link.ttn-btn-trans, .ttn-btn-text.ttn-btn-trans {
+    border-color: transparent !important;
+    box-shadow: none !important;
+    background-color: transparent;
+  }
+  .ttn-link.ttn-btn-trans{color:$ttn-primary !important}
+  .ttn-btn-text.ttn-btn-trans{color:$ttn-background-color !important}
+  .ttn-btn-trans:hover {
+    background: rgba($ttn-primary, .2) !important;
+  }
+  .ttn-link.ttn-btn-trans:hover, .ttn-btn-primary.ttn-btn-trans:hover{color:#fff !important}
+
+.ttn-btn-primary {
+    color: $ttn-background-color;
+    border-color: $ttn-primary;
+    background: $ttn-primary;
+    text-shadow: 0 -1px 0 rgba($ttn-opposite-background-color, 0.12);
+    box-shadow: 0 2px rgba($ttn-primary, 0.043);
+
+    &:hover{
+    border-color: lighten($color: $ttn-primary, $amount: 10);
+    background: lighten($color: $ttn-primary, $amount: 10);
+    color: $ttn-background-color;
+    }
+    &.ttn-btn-icon::before{
+        background-color: $ttn-background-color !important;
+        box-shadow: none  !important;
+        text-shadow: none !important;
+    }
+}
+
+.ttn-btn-dashed {
+    color: rgba($ttn-opposite-background-color , 0.85);
+    border-color: $ttn-greyLight ;
+    background: $ttn-background-color;
+    border-style: dashed;
+
+   
+}
+
+.ttn-btn-text{
+    color: $ttn-opposite-background-color;
+    border-color: $ttn-background-color;
+    background: $ttn-background-color;
+    box-shadow: none;
+
+    &:hover{
+        border-color: lighten($color: $ttn-primary, $amount: 41);
+        background: lighten($color: $ttn-primary, $amount: 41);
+    }
+
+    &.ttn-btn-icon:hover::before{
+        background-color: rgba($ttn-primary, .50) !important;
+    }
+}
+.ttn-link{
+    color: $ttn-primary;
+    border-color: $ttn-background-color;
+    background: $ttn-background-color;
+    box-shadow: none;
+
+    &:hover{
+        border-color: lighten($color: $ttn-primary, $amount: 41);
+        background: lighten($color: $ttn-primary, $amount: 41);
+    }
+
+    &.ttn-btn-icon:hover::before{
+        background-color: rgba($ttn-primary, .50) !important;
+    }
+}
+
+//tamaño de botones
+
+.ttn-btn-lg {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.ttn-btn-sm{
+padding: 0 7px;
+font-size: 14px;
+}
+//botones danger
+
+.ttn-btn-outline-danger{
+    border-color: $ttn-danger;
+    color: $ttn-danger;
+    &:hover{
+        background: rgba($ttn-danger, 0.2);
+        border-color: $ttn-danger;
+        color: $ttn-danger;
+    }
+}
+.ttn-btn-danger{
+    border-color: $ttn-danger;
+    background-color: $ttn-danger;
+    color: $ttn-background-color;
+
+    &:hover{
+        background: rgba($ttn-danger, 0.8);
+        border-color: $ttn-danger;
+        color: $ttn-background-color;
+    }
+}
+.ttn-btn-dashed.ttn-btn-danger, .ttn-btn-text.ttn-btn-danger, .ttn-link.ttn-btn-danger{
+    background-color: $ttn-background-color;
+    color: $ttn-danger;
+    &:hover{
+        background: rgba($ttn-danger, 0.2);
+        border-color: $ttn-danger;
+        color: $ttn-danger;
+    }
+}
+ .ttn-btn-text.ttn-btn-danger, .ttn-link.ttn-btn-danger{
+    border-color: $ttn-background-color;
+    &:hover{
+        border-color: $ttn-background-color;
+    }
+}
+
+
+//botones con icono...
+.ttn-btn svg{
+    max-width: 16px;
+    max-height: 16px;
+}
+.ttn-btn-icon{
+    position: relative;
+    padding-left: 42px;
+
+    &::before{
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 18px;
+        height: 18px;
+        background-color:rgba($ttn-opposite-background-color, .50);
+        left: 12px;
+        top:12px;
+    }
+    
+}
+.ttn-btn-icon-search::before{
+    mask: url('#{$path--rel}/icons/icon-search.svg');
+    -webkit-mask: url('#{$path--rel}/icons/icon-search.svg');}
+.ttn-btn-icon-download::before{
+    mask: url('#{$path--rel}/icons/icon-download.svg');
+    -webkit-mask: url('#{$path--rel}/icons/icon-download.svg');
+}
+.ttn-btn-icon-loading::before{
+    mask: url('#{$path--rel}/icons/icon-loading.svg');
+    -webkit-mask: url('#{$path--rel}/icons/icon-loading.svg');
+}
+.ttn-btn-icon-exit::before{
+    mask: url('#{$path--rel}/icons/icon-exit.svg');
+    -webkit-mask: url('#{$path--rel}/icons/icon-exit.svg');
+}
+@keyframes rotateit {
+    from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+    
+  }
+.ttn-btn-icon-loading::before{
+-webkit-animation: rotateit 1s infinite linear;
+-moz-animation: rotateit 1s infinite linear;
+-o-animation: rotateit 1s infinite linear;
+animation: rotateit 1s infinite linear;
+background-color:$ttn-background-color !important;
+}
+
+
+//btn animados
+
+.ttn-btn-animated::after{
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:-100%;
+    left: 0;
+    background-color:$ttn-background-color;
+    color: $ttn-background-color;
+    line-height: 1.5715;
+    box-sizing: border-box;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    padding: 7px 0;
+}
+.ttn-btn-animated:hover::after{
+    top:0;
+    left: 0;
+    background-color:$ttn-primary;
+    color: $ttn-background-color;
+}
+.ttn-btn-animated>svg{
+    
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    
+    position: absolute;
+    top: 12px;
+    left: calc(50% - 8px);
+      
+}
+.ttn-btn-animated:hover>svg{
+   top:37px;
+    
+}
+.ttn-animated-añadir{width: 150px;}
+.ttn-animated-añadir::after{
+    content: 'Añadir a la cesta';
+}
+.ttn-animated-download{width: 130px;}
+.ttn-animated-download:hover{
+    border-color: $ttn-success;
+}
+.ttn-animated-download::after{
+    content: 'DESCARGAR!';
+}
+.ttn-animated-download:hover::after{
+    background-color: $ttn-success;
+    border-color: $ttn-success;
+}
+.ttn-animated-exit{width: 90px;}
+
+.ttn-animated-exit::after{
+    content: 'SALIR';
+}
+.ttn-animated-exit:hover{
+    border-color: $ttn-danger;
+}
+.ttn-animated-exit:hover::after{
+    background-color: $ttn-danger;
+}
+.ttn-animated-next::after{
+    top:0;
+    left: 100%;
+    background:$ttn-primary url('#{$path--rel}/icons/icon-arrow-right.svg') no-repeat center center;
+    background-size: 25%;
+}
+.ttn-animated-next:hover::after{
+    top:0;
+    left: 0;
+    
+}
