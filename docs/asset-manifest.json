@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/libreria/static/css/main.c096ea44.css",
+    "main.css": "/libreria/static/css/main.3dc1d084.css",
     "main.js": "/libreria/static/js/main.23acc2a9.js",
     "static/media/bg-nature.jpg": "/libreria/static/media/bg-nature.238500fee8e434d70c42.jpg",
     "static/media/icon-exit.svg": "/libreria/static/media/icon-exit.001aebb6f371999d051f.svg",
@@ -9,11 +9,11 @@
     "static/media/icon-loading.svg": "/libreria/static/media/icon-loading.db5256498db5b061d013.svg",
     "static/media/icon-download.svg": "/libreria/static/media/icon-download.751e6bc129ff31a37be7.svg",
     "static/media/icon-arrow-right.svg": "/libreria/static/media/icon-arrow-right.aab9917de713f9af77ec.svg",
-    "main.c096ea44.css.map": "/libreria/static/css/main.c096ea44.css.map",
+    "main.3dc1d084.css.map": "/libreria/static/css/main.3dc1d084.css.map",
     "main.23acc2a9.js.map": "/libreria/static/js/main.23acc2a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.c096ea44.css",
+    "static/css/main.3dc1d084.css",
     "static/js/main.23acc2a9.js"
   ]
 }
