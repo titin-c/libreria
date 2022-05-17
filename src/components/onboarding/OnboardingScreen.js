@@ -1,7 +1,6 @@
 import React from 'react';
 import data from './dataSlider';
 import { Slider } from './Slider';
-import SwitchCheck from '../forms/SwitchCheck'
 
 export const OnboardingScreen = () => {
   return (

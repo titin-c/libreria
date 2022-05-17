@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import {Slide} from './Slide'
-import './slider.css'
 
 export const Slider = (props) => {
   

@@ -3,13 +3,13 @@
   text-align: center;
   
 }
-h3 {
+.slide-content h3 {
   font-weight: bold;
   font-size: 2em;
   margin: 0 0 10px;
   color: #fff;
 }
-p {
+.slide-content p {
   margin: 10px 0;
   color: #fff;
 }
