@@ -4,6 +4,7 @@ import useToggle from "../../hooks/useToogle";
 function PasswordToogle({ name }) {
   const initialState = false;
   const { toggled, setToggle } = useToggle(initialState);
+  
   return (
     <div className="ttn-form-cont">
       <label htmlFor={name} className="ttn-form-label" >Contraseña</label>  

@@ -131,9 +131,9 @@ export const FormsScreen = () => {
           <h2>Switch checkbox</h2>
           <div >
             
-              <SwitchCheck name='check1'/>
+              <SwitchCheck name='check1' title1='¿Está usted de acuerdo?' title2='Sí, estoy de acuerdo.'/>
             
-              <SwitchCheck name='check2'/>
+              <SwitchCheck name='check2' title1='Sí, lo estoy.' title2='¿Seguro que está usted de acuerdo?'/>
 
               <SwitchCheck name='check3'/>
            

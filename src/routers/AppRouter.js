@@ -4,6 +4,7 @@ import { FormsScreen } from "../components/forms/FormsScreen";
 import { PopoverScreen } from "../components/popovers/PopoverScreen";
 import { Inicio } from "../components/inicio/Inicio";
 import { SideBar } from "../components/ui/SideBar";
+import { OnboardingScreen } from "../components/onboarding/OnboardingScreen";
 
 export const AppRouter = () => {
   return (
@@ -17,6 +18,7 @@ export const AppRouter = () => {
             <Route path="botones" element={<BotonesScreen />} />
             <Route path="formularios" element={<FormsScreen />} />
             <Route path="popover" element={<PopoverScreen />} />
+            <Route path="onboarding" element={<OnboardingScreen />} />
 
             {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit

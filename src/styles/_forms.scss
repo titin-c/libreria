@@ -266,23 +266,14 @@ input[type="text"], input[type="password"], input[type="number"], textarea {
     font-size: .9em;
   }
 
-.check1 .no-checked::before {
-    content: "¿Está usted de acuerdo?";
-}
-.check1 .checked::before {
-    content: "Sí, estoy de acuerdo.";
-}
+
+
 
 .check2.active .switch-cont:after {
     background-color: $ttn-danger;
     border-color: $ttn-danger;
 }
-.check2 .no-checked::before {
-    content: "¿Seguro que está usted de acuerdo?";
-}
-.check2 .checked::before {
-    content: "Sí, lo estoy.";
-}
+
 .check2.active .switch-cont {
     border: 2px solid $ttn-danger;
   }
