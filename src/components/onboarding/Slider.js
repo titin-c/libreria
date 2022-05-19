@@ -28,7 +28,7 @@ const dataLenght = props.data.length;
         setSlideIndex(index)
     }
   return (
-    <div className='container-slider'>
+    <div className={`container-slider ${props.clase}`} >
       <button className='ttn-btn ttn-btn-text ttn-btn-trans btn-skip'>Skip</button>
     {props.data.map((data, index) =>
 

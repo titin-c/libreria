@@ -1,0 +1,115 @@
+.cards-shop {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 1%;
+    min-width: 213px;
+    position: relative;
+  }
+
+  .card-image-cont {
+    flex: 1 1 120px;
+  }
+  .card-cont {
+    flex: 1 1 200px;
+    padding: 15px;
+    background-color: #F8EEE6;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+
+  }
+  .card-title {
+    fill: $ttn-success;
+  }
+  .card-description {
+    font-size: .9em;
+  }
+  .card-subtitle {
+    font-size: 0.8em;
+    color: #666;
+    margin: 0 0 10px 0;
+    line-height: 1em;
+  }
+  .euros {
+    font-size: 2em;
+    line-height: 1em;
+  }
+  .card-cont .ttn-btn {
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 4px 30px 6px;
+    margin-left: 10px;
+  }
+  .card-cont .ttn-btn-primary {
+    color: #fff;
+    border-color: $ttn-success;
+    background: $ttn-success;
+    box-shadow: 0 2px rgba($ttn-success, 0.043);
+
+    &:hover{
+        background-color: rgba($ttn-success, 0.8);
+        border-color: $ttn-success;
+        text-shadow: 0 0px $ttn-success;
+    }
+  }
+  .price-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+.old-price {
+    text-decoration: line-through;
+    color: rgba($ttn-danger, .9);
+    position: absolute;
+top: -15px;
+  }
+  .card-oferta {
+    position: absolute;
+    background: $ttn-danger;
+    color: #fff;
+    font-size: .8em;
+    right: -10px;
+    text-align: center;
+    top: 3px;
+    transform: rotate(20deg);
+    padding: 2px 20px 2px 60px;
+  }
+  .card-img {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+  }
+  @media (min-width: 800px) {
+    .card-container {
+        flex: 1 1 48%;
+      }
+      
+    }
+  @media (min-width: 1000px) {
+    .card-container {
+        flex: 1 1 31%;
+
+      }
+    }
+    @media (min-width: 1400px) {
+        .card-container {
+            flex: 1 1 23%;
+          }
+        }
+        @media (min-width: 1500px) {
+            .card-container {
+                flex: 1 1 48%;
+              }
+              .card-cont {
+                padding: 25px;
+              }
+            }

@@ -13,21 +13,19 @@ html, body{
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   
 }
-.container{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: stretch;
-    grid-row: auto;
-    height: 100%;
+.container {
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
 }
 .sidebar {
-    grid-column: 1 / 2;
+    flex: 1 1 246px;
     
 
     background-color: rgba($ttn-opposite-background-color, .1);
   }
 .cont {
-    grid-column: 2 / 6;
+    flex: 6 1 500px;
     overflow-y: visible;
     padding: 40px;
     background-color: rgba($ttn-opposite-background-color, .01);

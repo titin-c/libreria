@@ -51,7 +51,7 @@ button, a.ttn-btn , html [type=button], [type=reset], [type=submit]  {
     background: rgba($ttn-opposite-background-color, .02) !important;
     color: rgba($ttn-opposite-background-color, .4) !important;
     border-color: $ttn-greyLight !important;
-    box-shadow: 0 2px rgba($ttn-opposite-background-color , 0.016) !important;
+    box-shadow: none !important;
     cursor: default;
   }
   .ttn-link.ttn-btn-disabled, .ttn-btn-text.ttn-btn-disabled {
@@ -104,6 +104,7 @@ button, a.ttn-btn , html [type=button], [type=reset], [type=submit]  {
     border-color: $ttn-greyLight ;
     background: $ttn-background-color;
     border-style: dashed;
+    box-shadow: none;
 
    
 }
