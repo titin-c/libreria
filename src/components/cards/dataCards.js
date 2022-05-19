@@ -8,7 +8,7 @@ const dataSlider = [
         price: 18.04,
         entero: 18,
         decimales: ".04",
-        image: "card1.WebP"
+        image: "card1.jpg"
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ const dataSlider = [
         newPrice: 15.00,
         entero: 15,
         decimales: ".00",
-        image: "card2.WebP"
+        image: "card2.jpg"
     },
     {
         id: 3,
@@ -29,7 +29,7 @@ const dataSlider = [
         price: 23.74,
         entero: 23,
         decimales: ".74",
-        image: "card3.WebP"
+        image: "card3.jpg"
     },
     {
         id: 4,
@@ -40,7 +40,7 @@ const dataSlider = [
         newPrice: 40.65,
         entero: 40,
         decimales: ".65",
-        image: "card4.WebP"
+        image: "card4.jpg"
     },
     {
         id: 5,
@@ -49,7 +49,7 @@ const dataSlider = [
         description: "Vulputate, ante leo fermentum nulla, sit amet ornare lorem eros a massa, leo fermentum.",
         entero: 18,
         decimales: ".99",
-        image: "card5.WebP"
+        image: "card5.jpg"
     },
     {
         id: 6,
@@ -58,7 +58,7 @@ const dataSlider = [
         description: "Vulputate, ante leo fermentum nulla, sit amet ornare lorem eros a massa, leo fermentum.",
         entero: 16,
         decimales: ".99",
-        image: "card6.WebP"
+        image: "card6.jpg"
     },
 ];
 
