@@ -27,16 +27,32 @@ html, body{
 .cont {
     flex: 6 1 500px;
     overflow-y: visible;
-    padding: 40px;
+    padding: 0px;
     background-color: rgba($ttn-opposite-background-color, .01);
     
   }
+ 
   section {
     border: solid 1px $ttn-greyLight;
-    border-radius: 4px;
-    padding: 0 20px 20px;
+    border-left:none;
+    border-right: none;
+    border-radius: 0;
     margin-bottom: 20px;
     background-color: $ttn-background-color;
+    padding: 0 10px 10px;
+  }
+  
+  @media (min-width: 600px) {
+    .cont {
+      padding: 40px;
+      
+    }
+    section {
+      border: solid 1px $ttn-greyLight;
+      border-radius: 4px;
+      padding: 0 20px 20px;
+    }
+    
   }
   .btn-recipient {display: flex; flex-wrap: wrap;}
   

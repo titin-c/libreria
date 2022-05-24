@@ -1,0 +1,367 @@
+.tabs {
+  flex: 1 1 150px 210px;
+  margin: 20px;
+  max-width: 300px;
+}
+
+.tabs-content.tab1 .cell-cuidados,
+.tabs-content.tab1 .cell-description {
+  display: none;
+}
+
+.tabs-content.tab2 .cell-image,
+.tabs-content.tab2 .cell-description {
+  display: none;
+}
+
+.tabs-content.tab3 .cell-cuidados,
+.tabs-content.tab3 .cell-image {
+  display: none;
+}
+
+.card-cell {
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+
+}
+
+.tabs-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  font-size: .7em;
+  text-transform: uppercase;
+}
+
+.tabs-nav li {
+  padding: 5px 8px;
+
+  margin-bottom: -1px;
+}
+
+.tabs-nav li.active {
+  background-color: #F8F4F2;
+  border-bottom: none;
+}
+
+.tabs-content {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #F8F4F2;
+
+  position: relative;
+  overflow: hidden;
+
+}
+
+.cell-title {
+  margin: 0;
+  padding: 10px 10px 1px;
+  font-size: 1.2em;
+  color: #4dd13a;
+}
+
+.card-cell.cell-description .cell-title {
+  display: none;
+}
+
+.card-cell.cell-image {
+  display: flex;
+}
+
+.card-cell .card-img {
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.card-cell.cell-cuidados {
+  display: flex;
+  padding: 10px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.care-icons {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.care-icons img {
+  width: 30px;
+  margin-right: 20px;
+  opacity: .7;
+}
+
+.care-icons div {
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+.card-cell.cell-description {
+  padding: 0 10px 10px;
+}
+
+.card-cell.cell-description p {
+  margin: 00 0 10px 0;
+}
+
+.card-category::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 12px;
+  background: $ttn-success;
+  -webkit-mask-image: url('../../public/assets/img/icons/icon-folder.svg');
+  mask-image: url('../../public/assets/img/icons/icon-folder.svg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  margin-right: 10px;
+}
+
+.card-category {
+  color: $ttn-success;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.card-cell.cell-price {
+  aspect-ratio: unset;
+  overflow: unset;
+  padding: 0 10px 10px;
+  font-size: 1.2em;
+}
+
+.price {
+  position: relative;
+  text-align: right;
+  padding-right: 10px;
+}
+.price > div::before {
+  content: "IVA incl.";
+  font-size: .8em;
+  color: #999;
+  margin-right: 5px;
+}
+.price.oferta > div::before {
+  display: none;
+}
+.card-cell.cell-price .old-price {
+  top: unset;
+  right: 100px;
+  bottom: 0px;
+}
+
+.card-cell.cell-price .ttn-btn.ttn-btn-primary.ttn-btn-rounded {
+  background-color: $ttn-success;
+  border-color: $ttn-success;
+  display: block;
+  width: 100%;
+  margin: 10px 0 0;
+}
+
+
+
+
+
+
+@media (min-width: 1200px) {
+
+  .tabs-content {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: stretch;
+    background-color: transparent;
+  }
+
+  .tabs-nav {
+    display: none;
+  }
+
+  .tabs {
+    flex: unset;
+    max-width: unset;
+    margin: 0 0 5px;
+    width: 100%;
+    background: rgb(246,238,229);
+background: -moz-linear-gradient(-45deg,  rgba(246,238,229,1) 0%, rgba(255,255,255,1) 79%);
+background: -webkit-linear-gradient(-45deg,  rgba(246,238,229,1) 0%,rgba(255,255,255,1) 79%);
+background: linear-gradient(135deg,  rgba(246,238,229,1) 0%,rgba(255,255,255,1) 79%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6eee5', endColorstr='#ffffff',GradientType=1 );
+
+    //border-top: 1px solid #F6EEE5;
+  }
+
+  .card-cell {
+    width: unset;
+    aspect-ratio: unset;
+  }
+
+  .tabs-content.tab1 .cell-cuidados,
+  .tabs-content.tab1 .cell-description,
+  .tabs-content.tab2 .cell-image,
+  .tabs-content.tab2 .cell-description,
+  .tabs-content.tab3 .cell-cuidados,
+  .tabs-content.tab3 .cell-image {
+    display: block;
+  }
+
+  .card-cell.cell-image {
+    order: 1;
+    aspect-ratio: unset;
+    width: 150px;
+    position: relative;
+    background-color: #F6EEE5;
+    border-right: 2px dotted #ccc;
+  }
+
+  .card-oferta {
+    right: unset;
+    text-align: left;
+    top: -2px;
+transform: rotate(-20deg);
+left: -55px;
+right: -52px;
+    background-color: rgba($ttn-danger, .8);
+  }
+
+  .card-cell .card-img {
+    max-height: 150px;
+    width: auto;
+  }
+
+  .card-cell.cell-cuidados {
+    order: 2;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0;
+    align-content: center;
+    width: 80px;
+    position: relative;
+    padding-top: 8px;
+  }
+  .card-cell.cell-cuidados::before {
+    content: "cuidados";
+    position: absolute;
+    top: 0;
+    background: #cdcdcd;
+    color: #fff;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.6em;
+  }
+  .care-icons {
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    margin: 5px 0;
+  }
+
+  .care-icons img {
+    width: 23px;
+    margin-right: 0;
+    opacity: .7;
+  }
+
+  .care-icons div {
+    display: none;
+  }
+
+  .cell-title {
+    display: none;
+  }
+
+  .card-cell.cell-description .cell-title {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 1.4em;
+  }
+
+  .card-cell.cell-description {
+    padding: 20px 0 0;
+    order: 3;
+    width: calc(100% - 430px);
+  }
+
+  .card-category {
+    display: none;
+  }
+
+  .card-cell.cell-price {
+    order: 4;
+    width: 180px;
+    font-size: unset;
+    padding-top: 20px;
+  }
+
+}
+
+/*.card-table {
+    display: table;
+  }
+  .card-table-row {
+    
+    display: table-row;
+  }
+  .card-cell {
+    display: table-cell;
+    
+  }
+  
+
+
+  .card-cell.cell-image {
+    max-width: 120px;
+    min-width: 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .card-cell.cell-cuidados {
+    width: 80px;
+    vertical-align: middle;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .care-icons {
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+  }
+  .care-icons img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: block;
+  }
+  .card-cell.cell-title {
+    padding: 10px;
+    vertical-align: middle;
+  }
+  .card-cell.cell-price {
+    vertical-align: middle;
+    min-width: 105px;
+    padding: 10px;
+    background-color: rgba($ttn-success, .8);
+  }
+  .price.oferta {
+    position: relative;
+  }*/
