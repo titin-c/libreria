@@ -21,8 +21,8 @@
 
 .card-cell {
   width: 100%;
-  aspect-ratio: 1/1;
   overflow: hidden;
+  height: 300px;
 }
 
 .tabs-nav {
@@ -68,7 +68,6 @@
 
 .card-cell.cell-image {
   display: flex;
-  
   position: relative;
 }
 .card-oferta {
@@ -87,14 +86,13 @@
   filter: blur(1rem);
 }
 .card-cell .card-img {
-  object-fit: cover;
-width: auto;
-height: auto;
 display: block;
 position: relative;
 margin: 0 auto;
-max-width: 100%;
-max-height: 100%;
+width: unset;
+height: unset;
+min-width: unset;
+min-height: unset;
 }
 
 .card-cell.cell-cuidados {
@@ -158,6 +156,7 @@ max-height: 100%;
   overflow: unset;
   padding: 0 10px 10px;
   font-size: 1.2em;
+  height: unset;
 }
 
 .price {
@@ -223,7 +222,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6eee5', end
 
   .card-cell {
     width: unset;
-    aspect-ratio: 1/1;
+    height: unset;
   }
 
   .tabs-content.tab1 .cell-cuidados,
@@ -234,10 +233,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6eee5', end
   .tabs-content.tab3 .cell-image {
     display: block;
   }
-
+  
   .card-cell.cell-image {
     order: 1;
-    aspect-ratio: unset;
     width: 150px;
     position: relative;
     background-color: transparent;
@@ -335,55 +333,3 @@ padding-bottom: 2px;
   }
 
 }
-
-/*.card-table {
-    display: table;
-  }
-  .card-table-row {
-    
-    display: table-row;
-  }
-  .card-cell {
-    display: table-cell;
-    
-  }
-  
-
-
-  .card-cell.cell-image {
-    max-width: 120px;
-    min-width: 80px;
-    position: relative;
-    overflow: hidden;
-  }
-  .card-cell.cell-cuidados {
-    width: 80px;
-    vertical-align: middle;
-    padding: 5px;
-    text-align: center;
-  }
-
-  .care-icons {
-    width: 50px;
-    height: 50px;
-    padding: 8px;
-  }
-  .care-icons img {
-    max-width: 100%;
-    height: auto;
-    max-height: 100%;
-    display: block;
-  }
-  .card-cell.cell-title {
-    padding: 10px;
-    vertical-align: middle;
-  }
-  .card-cell.cell-price {
-    vertical-align: middle;
-    min-width: 105px;
-    padding: 10px;
-    background-color: rgba($ttn-success, .8);
-  }
-  .price.oferta {
-    position: relative;
-  }*/
