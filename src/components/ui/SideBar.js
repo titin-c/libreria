@@ -73,6 +73,16 @@ export const SideBar = () => {
               Product tables
             </NavLink>
             </li>
+            <li className="nav-item">
+            <NavLink
+              activeclassname="active"
+              className="nav-link"
+              exact="true"
+              to="/navbar"
+            >
+              Navbar
+            </NavLink>
+            </li>
         </ul>
       </nav>
     </div>

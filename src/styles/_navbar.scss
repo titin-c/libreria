@@ -1,0 +1,101 @@
+
+.menu-marker{
+    position:relative;
+    width: 375px;
+margin: auto;
+border: solid 1px $ttn-greyLight;
+
+padding: 20px 0px;
+border-radius: 20px;}
+ul.navbar-marker {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid #ccc;
+padding-top: 20px;
+}
+.menu-marker button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    opacity: .4;
+
+    -webkit-transition: all .3s ease;
+-moz-transition: all .3s ease;
+-ms-transition: all .3s ease;
+-o-transition: all .3s ease;
+transition: all .3s ease;
+
+
+  }
+  
+  .menu-marker button.active {
+
+    opacity: 1;
+  }
+  
+.marker{
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 100%;
+    position: absolute;
+    bottom:20px;
+    
+    z-index: 0;
+
+    animation-name: parabola;
+
+    -webkit-transition: all .3s ease;
+-moz-transition: all .3s ease;
+-ms-transition: all .3s ease;
+-o-transition: all .3s ease;
+transition: all .3s ease;
+}
+
+@keyframes parabola {
+  to {
+    bottom:18px
+  }
+
+  50% {
+    bottom:-20px
+  }
+
+  from {
+    bottom:18px
+  }
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 1s;
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  color: $ttn-greyMedium;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.carousel-item b{
+  color:#ff0;
+  font-weight: normal;
+}

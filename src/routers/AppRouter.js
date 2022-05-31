@@ -7,6 +7,7 @@ import { SideBar } from "../components/ui/SideBar";
 import { OnboardingScreen } from "../components/onboarding/OnboardingScreen";
 import { CardsScreen } from "../components/cards/CardsScreen";
 import { ProductTableScreen } from "../components/tables/ProductTableScreen";
+import { NavbarScreen } from "../components/navbar/NavbarScreen";
 
 export const AppRouter = () => {
   return (
@@ -23,6 +24,7 @@ export const AppRouter = () => {
             <Route path="onboarding" element={<OnboardingScreen />} />
             <Route path="cards" element={<CardsScreen />} />
             <Route path="product-tables" element={<ProductTableScreen />} />
+            <Route path="navbar" element={<NavbarScreen />} />
 
             {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit

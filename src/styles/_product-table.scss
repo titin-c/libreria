@@ -69,12 +69,29 @@
 
 .card-cell.cell-image {
   display: flex;
+  
+  position: relative;
 }
-
+.card-oferta {
+  z-index: 2;
+}
+.card-img-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  filter: blur(1rem);
+}
 .card-cell .card-img {
   max-height: 100%;
   width: auto;
   max-width: 100%;
+  position: relative;
   height: auto;
   margin: auto;
 }
@@ -222,10 +239,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6eee5', end
     aspect-ratio: unset;
     width: 150px;
     position: relative;
-    background-color: #F6EEE5;
+    background-color: transparent;
     border-right: 2px dotted #ccc;
   }
-
+  
   .card-oferta {
     right: unset;
     text-align: left;
@@ -233,12 +250,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6eee5', end
 transform: rotate(-20deg);
 left: -55px;
 right: -52px;
+z-index: 2;
     background-color: rgba($ttn-danger, .8);
   }
 
   .card-cell .card-img {
     max-height: 150px;
     width: auto;
+    position: relative;
   }
 
   .card-cell.cell-cuidados {
@@ -254,16 +273,18 @@ right: -52px;
     padding-top: 8px;
   }
   .card-cell.cell-cuidados::before {
-    content: "cuidados";
-    position: absolute;
-    top: 0;
     background: #cdcdcd;
-    color: #fff;
-    left: 0;
-    right: 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 0.6em;
+color: #fff;
+content: "cuidados";
+font-size: .6em;
+left: 10px;
+position: absolute;
+right: 10px;
+text-align: center;
+text-transform: uppercase;
+top: 0;
+border-radius: 0 0 10px 10px;
+padding-bottom: 2px;
   }
   .care-icons {
     display: block;
