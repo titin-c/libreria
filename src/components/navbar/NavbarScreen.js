@@ -13,7 +13,7 @@ export const NavbarScreen = () => {
              <Navbar data={navbarData}>
           
             {navbarData.map((data) =>
-              <NavbarIcon key={data.id} data={data} title={data.title} />
+              <NavbarIcon key={data.id} data={data} title={data.title} ></NavbarIcon>
             )}
           </Navbar>
         </div>

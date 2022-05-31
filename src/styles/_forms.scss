@@ -306,3 +306,20 @@ input[type="text"], input[type="password"], input[type="number"], textarea {
     text-align: center;
     font-weight: bold;
 }
+
+
+@media (max-width: 600px) {
+  .ttn-form-cont {
+    width: 100%;
+  }
+  .ttn-input, .ttn-select, .ttn-textarea {
+    width: 100%;
+  }
+  .ttn-form-cont.ttn-form-group .ttn-input {
+    width: 80%;
+  }
+  .ttn-form-cont.ttn-form-group  .button.ttn-btn{
+    width: 20%;
+  }
+}
+

@@ -27,6 +27,7 @@ button, a.ttn-btn , html [type=button], [type=reset], [type=submit]  {
     overflow: hidden;
     padding: 7px 15px 9px;
     font-size: 16px;
+    height: 43px;
 
     &:hover{
         color: $ttn-primary;
@@ -145,10 +146,12 @@ button, a.ttn-btn , html [type=button], [type=reset], [type=submit]  {
 .ttn-btn-lg {
     padding: 10px 20px;
     font-size: 18px;
+    height: 51px;
 }
 .ttn-btn-sm{
 padding: 0 7px;
 font-size: 14px;
+height: 36px;
 }
 //botones danger
 

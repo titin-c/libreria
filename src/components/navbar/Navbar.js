@@ -5,7 +5,10 @@ import React, { useEffect, useState } from "react";
 export const NavbarIcon = ({ data }) => {
   return (
     <>
-      <img src={`${process.env.PUBLIC_URL}/assets/img/icons/${data.img}.svg`} alt={data.title} width='25' height='25' />
+      <div className="carousel-item-img">
+        <img src={`${process.env.PUBLIC_URL}/assets/img/icons/${data.img}.svg`} alt={data.title} width='25' height='25' />
+        </div>
+      <span className="carousel-item-title">{data.title}</span>
     </>
   );
 };
@@ -36,7 +39,7 @@ const Navbar = ({children }) => {
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}
       >
         {React.Children.map(children, (child, index) =>
-                <div className="carousel-item">Page [<b>{index+1}</b>]</div>
+                <div className="carousel-item">{child}</div>
             )}
       </div>
       </div>

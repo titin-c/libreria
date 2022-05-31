@@ -85,8 +85,9 @@ top: -15px;
   }
   .card-img {
     width: 100%;
-    height: auto;
-    min-height: 100%;
+height: auto;
+min-height: 100%;
+display: block;
   }
   @media (min-width: 800px) {
     .card-container {
