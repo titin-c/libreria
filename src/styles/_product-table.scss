@@ -22,7 +22,6 @@
 .card-cell {
   width: 100%;
   overflow: hidden;
-  height: 300px;
 }
 
 .tabs-nav {
@@ -67,7 +66,6 @@
 }
 
 .card-cell.cell-image {
-  display: flex;
   position: relative;
 }
 .card-oferta {
@@ -86,13 +84,13 @@
   filter: blur(1rem);
 }
 .card-cell .card-img {
-display: block;
+
 position: relative;
 margin: 0 auto;
-width: unset;
-height: unset;
-min-width: unset;
-min-height: unset;
+width: 100%;
+height: auto;
+min-height: 100%;
+display: block;
 }
 
 .card-cell.cell-cuidados {
