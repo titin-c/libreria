@@ -13,7 +13,7 @@ export const Slide = (props) => {
     style={stylo}
 >
     <div className='slide-content'>
-    <img src={`${process.env.PUBLIC_URL}/assets/img/${props.data.image}`} alt='{props.data.title}' width='200px' height='200px' className='onboarding-img'/>
+    <img src={`${process.env.PUBLIC_URL}/assets/img/${props.data.image}`} alt={props.data.title} width='200px' height='200px' className='onboarding-img'/>
     <h3>{props.data.title}</h3>
     <p>{props.data.subTitle}</p>
     <div className='container-btn'>

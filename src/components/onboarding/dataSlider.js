@@ -10,7 +10,7 @@ const dataSlider = [
   {
     ide: 2,
     title: "Propuesta de valor",
-    subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum, tellus ac molestie.",
+    subTitle: "Lorem ipsum dolor sit amet, consectetur elit. Donec fermentum, tellus ac molestie.",
     background: "img2.jpg",
     image: "valor.svg"
   },
@@ -24,7 +24,7 @@ const dataSlider = [
   {
     ide: 4,
     title: "...y de Regalo!",
-    subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum, tellus ac molestie.",
+    subTitle: "Lorem ipsum dolor sit amet, adipiscing elit. Donec fermentum, tellus ac molestie.",
     background: "img1.jpg",
     image: "empecemos.svg"
   }
