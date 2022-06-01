@@ -8,7 +8,7 @@ export const SideBar = () => {
 
         <Link
           className="navbar-brand"
-          to="/"
+          to="libreria/"
         >
           Libreria de Recursos
         </Link>
@@ -18,9 +18,9 @@ export const SideBar = () => {
               activeclassname="active"
               className="nav-link"
               exact="true"
-              to="/botones"
+              to="libreria/botones"
             >
-              Botones
+              Botoneslibreria
             </NavLink>
           </li>
           <li className="nav-item">
@@ -28,7 +28,7 @@ export const SideBar = () => {
               activeclassname="active"
               className="nav-link"
               exact="true"
-              to="/formularios"
+              to="libreria/formularios"
             >
               Formularios
             </NavLink>
@@ -38,7 +38,7 @@ export const SideBar = () => {
               activeclassname="active"
               className="nav-link"
               exact="true"
-              to="/popover"
+              to="libreria/popover"
             >
               Popovers
             </NavLink>
@@ -48,7 +48,7 @@ export const SideBar = () => {
               activeclassname="active"
               className="nav-link"
               exact="true"
-              to="/onboarding"
+              to="libreria/onboarding"
             >
               Onboarding
             </NavLink>
@@ -58,7 +58,7 @@ export const SideBar = () => {
               activeclassname="active"
               className="nav-link"
               exact="true"
-              to="/cards"
+              to="libreria/cards"
             >
               Cards
             </NavLink>
@@ -68,7 +68,7 @@ export const SideBar = () => {
               activeclassname="active"
               className="nav-link"
               exact="true"
-              to="/product-tables"
+              to="libreria/product-tables"
             >
               Product tables
             </NavLink>
@@ -78,7 +78,7 @@ export const SideBar = () => {
               activeclassname="active"
               className="nav-link"
               exact="true"
-              to="/navbar"
+              to="libreria/navbar"
             >
               Navbar
             </NavLink>

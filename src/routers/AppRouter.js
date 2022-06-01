@@ -16,20 +16,20 @@ export const AppRouter = () => {
         <SideBar />
 
         <Routes>
-            <Route path="/" element={<Inicio />} />
+            <Route path="libreria/" element={<Inicio />} />
             <Route index element={<Inicio />} />
-            <Route path="botones" element={<BotonesScreen />} />
-            <Route path="formularios" element={<FormsScreen />} />
-            <Route path="popover" element={<PopoverScreen />} />
-            <Route path="onboarding" element={<OnboardingScreen />} />
-            <Route path="cards" element={<CardsScreen />} />
-            <Route path="product-tables" element={<ProductTableScreen />} />
-            <Route path="navbar" element={<NavbarScreen />} />
+            <Route path="libreria/botones" element={<BotonesScreen />} />
+            <Route path="libreria/formularios" element={<FormsScreen />} />
+            <Route path="libreria/popover" element={<PopoverScreen />} />
+            <Route path="libreria/onboarding" element={<OnboardingScreen />} />
+            <Route path="libreria/cards" element={<CardsScreen />} />
+            <Route path="libreria/product-tables" element={<ProductTableScreen />} />
+            <Route path="libreria/navbar" element={<NavbarScreen />} />
 
             {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
                 routes for. */}
-            <Route path="*" element={<Inicio />} />
+            <Route path="libreria/*" element={<Inicio />} />
         
         </Routes>
     </BrowserRouter>
