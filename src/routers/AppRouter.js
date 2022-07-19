@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter, HashRouter } from "react-router-dom";
 import { BotonesScreen } from "../components/botones/BotonesScreen";
 import { FormsScreen } from "../components/forms/FormsScreen";
 import { PopoverScreen } from "../components/popovers/PopoverScreen";
@@ -11,7 +11,7 @@ import { NavbarScreen } from "../components/navbar/NavbarScreen";
 
 export const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
         
         <SideBar />
 
@@ -32,6 +32,6 @@ export const AppRouter = () => {
             <Route path="libreria/*" element={<Inicio />} />
         
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
