@@ -9,7 +9,7 @@ const dataSlider = [
   },
   {
     ide: 2,
-    title: "Propuesta de valor",
+    title: "Propuesta valor",
     subTitle: "Lorem ipsum dolor sit amet, adipiscing elit. Donec fermentum, tellus ac molestie.", 
     background: "1x1.gif",
     image: "valor.svg"
