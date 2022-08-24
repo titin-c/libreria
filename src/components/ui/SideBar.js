@@ -33,7 +33,7 @@ export const SideBar = () => {
               Formularios
             </NavLink>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <NavLink
               activeclassname="active"
               className="nav-link"
@@ -42,7 +42,7 @@ export const SideBar = () => {
             >
               Popovers
             </NavLink>
-          </li>
+          </li> */}
           <li className="nav-item">
             <NavLink
               activeclassname="active"
